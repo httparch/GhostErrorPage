@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#spotlight {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background: radial-gradient(circle 20vw at var(--x, 50%) var(--y, 50%), 
+        rgba(255, 255, 255, 0.3) 10%, rgba(0, 0, 0, 0.9) 80%);
+    mix-blend-mode: multiply;
+    transition: background 0.12s ease-out;
+    z-index: 3;
+}
+
+.pangolin-regular {
+    font-family: "Pangolin", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    font-size: 4em;
+    color: rgb(255, 199, 59);
+    font-weight: bold;
+    margin-top: 1em;
+    position: relative;
+    z-index: 2;
+}
+
+i{
+    color: rgb(231, 189, 155);
+    font-weight: 100;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#overlayText h1 {
+    color: rgb(231, 189, 155);
+    font-size: 3em;
+}
+
+#overlayText p {
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#overlayText {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 80vw;
+    padding: 1em;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 3em;
+    }
+
+    #overlayText h1 {
+        font-size: 2em;
+    }
+
+    #overlayText p {
+        font-size: 1em;
+    }
+
+    #spotlight {
+        background: radial-gradient(circle 30vw at var(--x, 50%) var(--y, 50%), 
+            rgba(255, 255, 255, 0.3) 10%, rgba(0, 0, 0, 0.9) 80%);
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 2.5em;
+    }
+
+    #overlayText {
+        top: 60%;
+        max-width: 90vw;
+    }
+
+    #overlayText h1 {
+        font-size: 1.8em;
+    }
+
+    #overlayText p {
+        font-size: 0.9em;
+    }
+
+    #spotlight {
+        background: radial-gradient(circle 35vw at var(--x, 50%) var(--y, 50%), 
+            rgba(255, 255, 255, 0.3) 10%, rgba(0, 0, 0, 0.9) 80%);
+    }
+}
+
+#container3D {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
