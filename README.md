@@ -16,7 +16,7 @@ GhostErrorPage is a spooky **404 error page** built using **Three.js** for pract
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/GhostErrorPage.git
+   git clone https://github.com/httparch/GhostErrorPage.git
    ```
 2. Navigate to the project folder:
    ```sh
