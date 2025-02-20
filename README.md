@@ -2,7 +2,9 @@
 
 GhostErrorPage is a spooky **404 error page** built using **Three.js** for practice. It features a haunted theme with a ghost model from **P3D**, enhanced by a spotlight effect for a mysterious ambiance.
 
-<img src="https://github.com/user-attachments/assets/600e7020-c0e1-4600-816c-7dc3a68a2d00" width="500" alt="GhostErrorPage Preview">
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/600e7020-c0e1-4600-816c-7dc3a68a2d00" width="500" alt="GhostErrorPage Preview">
+</div>
 
 ## Technologies Used
 
